@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="ContactListSuite">
+    <test name="AutomatedTests">
+
+        <parameter name="browsername" value="chrome"/>
+        <parameter name="browserversion" value="83"/>
+        <parameter name="platform" value="windows"/>
+
+        <groups>
+            <run>
+                <include name="Smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="org.automation.UI.tests.ContactTests" />
+
+        </classes>
+    </test>
+</suite>
