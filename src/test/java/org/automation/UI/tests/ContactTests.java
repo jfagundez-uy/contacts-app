@@ -9,7 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 import org.openqa.selenium.support.PageFactory;
 
-public class ContactTests extends PageBase {
+public class ContactTests extends TestBase {
 
     private String contactId;
     Utils utils = new Utils();

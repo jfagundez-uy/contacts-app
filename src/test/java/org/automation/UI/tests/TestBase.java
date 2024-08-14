@@ -13,7 +13,7 @@ import java.time.Duration;
 
 
 @Getter
-public abstract class PageBase {
+public abstract class TestBase {
 
     protected WebDriver driver;
 
