@@ -27,13 +27,13 @@ This project is an automation test suite designed to perform end-to-end (E2E) te
 │                       │   └── MainContactsPage.java
 │                       └── tests
 │                           ├── ContactTests.java
-│                           └── PageBase.java
+│                           └── BaseTest.java
 └── testng.xml
 ```
 
 ## Key Components
 
-- **API/Utils.java**: Contains utility methods for interacting with the Contact List API, such as login, create, update, and delete operations for contacts.
+- **API/ContactService.java**: Contains methods for interacting with the Contact List API, such as login, create, update, and delete operations for contacts.
 - **UI/pageObjects**: Contains Page Object Model (POM) classes that represent the web pages and encapsulate the interaction logic for UI elements.
 - **UI/tests/ContactTests.java**: Contains the TestNG test classes for verifying the creation, update, and deletion of contacts through UI and API.
 - **BaseTest.java**: A base test class that includes common setup, teardown, and utility methods used across tests.
