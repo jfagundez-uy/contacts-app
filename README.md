@@ -45,3 +45,18 @@ This project is an automation test suite designed to perform end-to-end (E2E) te
 - **TestNG Annotations**: Uses TestNG annotations like `@BeforeMethod`, `@AfterMethod`, and `@Test` to manage test execution and dependencies.
 - **Data-Driven Testing**: Uses JSON files to manage test data, allowing easy modification and extension of test cases.
 - **Clean Up**: Ensures that each test runs independently by creating and deleting contacts before and after each test.
+
+## Continuous Integration (CI) Pipeline
+
+This project uses GitHub Actions for continuous integration (CI). GitHub Actions was chosen because it provides an easy-to-use solution that is fully integrated with GitHub, eliminating the need to add an external CI tool. The CI pipeline is automatically triggered on the following events:
+- A push to the `master` branch
+- A pull request targeting the `master` branch
+
+### CI Pipeline Configuration
+
+The CI pipeline is defined in a YAML file located in `.github/workflows/ci.yml`. Below is an overview of the steps performed in the pipeline:
+
+1. Checkout Code
+2. Set Up JDK 11
+3. Cache Maven Packages
+4. Install Dependencies and Run Tests
